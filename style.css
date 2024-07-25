@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 0px 0px ;
+    max-width: 1120px;
+    
+}
+h2.titolu{
+  font-size: 24px;
+  text-align: center;
+}
+span{
+  color: #F28705;
+}
+.flex{
+  display: flex;
+  
+}
+#im{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+}
+#aa{
+  box-shadow: none;
+}
+#menu{
+display: flex;
+justify-content: space-between;
+align-content: center;
+
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0px 10px;
+    
+}
+ul {
+    border: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+header a:hover{
+    box-shadow: 1px 1px 4px #F28705 ;
+    transform: scale(1.08);
+    border-radius: 5px;
+}
+
+/* local do texto */
+
+section#topo-site{
+ padding: 40px 4%;
+}
+section#topo-site #flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+#home-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  text-align: justify;
+}
+#home-position{
+  font-size: 19px;
+}
+button {
+  border: none;
+  width: 150px;
+  padding: 20px;
+  background-color:#F29F05;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: .2s;
+}
+
+button a{
+  color: white;
+}
+
+button:hover{
+  opacity: 1;
+  transform: scale(1.08);
+  box-shadow: -2px 2px 20px #F2CB05;
+}
+#home-img {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topo-img img {
+  width: 200px;
+  height: 200px;
+  animation: flutuar 4s ease-in-out infinite alternate ;
+  box-shadow: 0px 0px 16px 7px #F2CB05;
+  border-radius: 50%;
+}
+@keyframes flutuar{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-20px);
+  }
+}
+/* estilo Das espesialidades  */
+#quadro{
+  padding: 40px 4%;
+  flex-wrap: wrap;
+}
+#quadro .flex{
+  gap: 60px;
+}
+#quadro .ex-caixa{
+ padding: 40px; 
+ margin-top: 40px;
+ border-radius: 20px;
+ transition: .2s;
+
+}
+#quadro .ex-caixa:hover{
+  transform: scale(1.05);
+  box-shadow: -2px 2px 20px #F2CB05;
+  
+}
+#quadro .ex-caixa i{
+  font-size: 70px;
+  color: #F2CB05;
+
+}
+#quadro .ex-caixa h3{
+  font-size: 25px;
+  margin: 15px 0px ;
+}
+/* ddos do individo */
+section#sobre{
+  padding: 40px 4%;
+}
+section#sobre .flex{
+align-items: center;
+gap: 60px;
+
+}
+#sobre #text-sobre h2 span{
+display: block;
+line-height: 20px;
+margin: -2px;
+}
+#sobre #text-sobre p{
+margin: 30px 0px ;
+text-align: justify;
+}
+#sobre #text-sobre #botos a button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  
+}
+#sobre #text-sobre #botos a button i{
+  font-size: 30px;
+}
+
+/* Portforli */ 
+section#over-lay{
+padding: 80px 4%;
+box-shadow: 0px 0px 40px 10px #f2870541;
+}
+section#over-lay h2{
+  text-align: center;
+  margin: 30px;
+}
+section#over-lay .flex{
+  justify-content: space-around;
+ 
+}
+.over-box{
+ width: 360px;
+ height: 460px;
+ background-size: cover;
+ background-position: 100% 0%;
+transition: 1s;
+cursor: pointer;
+border-radius: 40px;
+position: relative;
+}
+.over-box:hover{
+  background-position: 100% 100%;
+  transform:scale(1.08);
+}
+.overlay{
+  position: absolute;
+  color: black;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1c1c69;
+  transition: 0.5s;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  opacity: 0;
+}
+.overlay:hover{
+  opacity: 1;
+}
+/* CONTACTS */
+
+#contact {
+  padding: 40px 4%;
+  box-shadow: 0px 15px 40px -5px #F28705;
+}
+#contact h2{
+  text-align: center;
+  margin: 20px;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+  padding: 5px 20px;
+  margin: auto;
+}
+
+input, textarea {
+ background-color: #444343;
+  box-shadow: 1px 1px 5px #f2cb0565;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  transition: 0.5s;
+}
+textarea:hover{
+  transform: scale(1.02);
+}
+input:hover{
+  transform: scale(1.02);
+}
+#contact form button:hover{
+  opacity: 1;
+}
+
+/* FOOTER */
+
+footer#roda {
+  box-shadow: 0px -1px 0px 0px #ececec;
+  padding: 40px 4%;
+ 
+}
+footer#roda > .botos{
+display: flex;
+justify-content: flex-end;
+
+}
+
